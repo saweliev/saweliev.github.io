@@ -50,7 +50,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h1>Bloodborne Cheat&nbsp;Sheet</h1>
-        <p class="lead">Contribute to the guide at the <a href="https://github.com/ZKjellberg/dark-souls-3-cheat-sheet">GitHub Page</a></p>
+        <p class="lead">Contribute to the guide at the <a href="https://github.com/saweliev/saweliev.github.io">GitHub Page</a></p>
       </div>
     </div>
 
@@ -73,28 +73,164 @@
       </div>
       <!-- PLAYTHROUGH START -->
       <div class="tab-pane active" id="tabPlaythrough">
+        <!-- Toolbar -->
+        <h2>Filter Checklist</h2>
+        <div class="btn-group">
+          <div class="btn-group btn-group-vertical">
+            <div class="btn-group">
+              <div class="btn-group-vertical" data-toggle="buttons">
+                <label class="btn btn-default dropdown-toggle">
+                  <input type="checkbox" data-category-toggle />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Quests
+                </label>
+              </div>
+            </div>
+            <div class="btn-group">
+              <div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_boss" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Bosses
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_miss" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Missable
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_npc" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  NPCs
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group btn-group-vertical">
+            <div class="btn-group">
+              <div class="btn-group-vertical" data-toggle="buttons">
+                <label class="btn btn-default dropdown-toggle">
+                  <input type="checkbox" data-category-toggle />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Gear
+                </label>
+              </div>
+            </div>
+            <div class="btn-group">
+              <div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_weap" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Weapons
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_arm" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Armor
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_tool" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Hunter Tools
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group btn-group-vertical">
+            <div class="btn-group">
+              <div class="btn-group-vertical" data-toggle="buttons">
+                <label class="btn btn-default dropdown-toggle">
+                  <input type="checkbox" data-category-toggle />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Upgrades
+                </label>
+              </div>
+            </div>
+            <div class="btn-group">
+              <div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_stone" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Blood Stones
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_gem" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Blood Gems
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_rune" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Caryll Runes
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group btn-group-vertical">
+            <div class="btn-group">
+              <div class="btn-group-vertical" data-toggle="buttons">
+                <label class="btn btn-default dropdown-toggle">
+                  <input type="checkbox" data-category-toggle />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Others
+                </label>
+              </div>
+            </div>
+            <div class="btn-group">
+              <div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_gest" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Gestures
+                </label>
+                <label class="btn btn-default">
+                  <input type="checkbox" data-item-toggle="f_misc" />
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                  Misc. items
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <h2>Playthrough Checklist <span id="playthrough_overall_total"></span></h2>
         <ul class="table_of_contents">
           <li><a href="#Hunters_Dream_Afternoon">Hunter's Dream (Afternoon)</a> <span id="playthrough_nav_totals_1"></span></li>
           <li><a href="#Central_Yharnam">Central Yharnam</a> <span id="playthrough_nav_totals_2"></span></li>
           <li><a href="#Old_Yharnam">Old Yharnam</a> <span id="playthrough_nav_totals_3"></span></li>
-          <li><a href="#Cathedral_Ward">Cathedral Ward</a> <span id="playthrough_nav_totals_4"></span></li>
-          <li><a href="#Yahargul_Unseen_Village_Evening">Yahar'gul, Unseen Village (Evening)</a> <span id="playthrough_nav_totals_5"></span></li>
-          <li><a href="#Hemwick_Charnel_Lane">Hemwick Charnel Lane</a> <span id="playthrough_nav_totals_6"></span></li>
-          <li><a href="#Forbidden_Woods">Forbidden Woods</a> <span id="playthrough_nav_totals_7"></span></li>
-          <li><a href="#Iosefkas_Clinic">Iosefka's Clinic</a> <span id="playthrough_nav_totals_8"></span></li>
-          <li><a href="#Byrgenwerth">Byrgenwerth</a> <span id="playthrough_nav_totals_9"></span></li>
-          <li><a href="#Lecture_Building_1F">Lecture Building 1F</a> <span id="playthrough_nav_totals_10"></span></li>
-          <li><a href="#Nightmare_Frontier">Nightmare Frontier</a> <span id="playthrough_nav_totals_11"></span></li>
-          <li><a href="#Yahargul_Unseen_Village_Blood_Moon">Yahar'gul, Unseen Village (Blood Moon)</a> <span id="playthrough_nav_totals_12"></span></li>
-          <li><a href="#Lecture_Building_2F">Lecture Building 2F</a> <span id="playthrough_nav_totals_13"></span></li>
-          <li><a href="#Nightmare_of_Mensis">Nightmare of Mensis</a> <span id="playthrough_nav_totals_14"></span></li>
-          <li><a href="#Forsaken_Cainhurst_Castle">Forsaken Cainhurst Castle</a> <span id="playthrough_nav_totals_15"></span></li>
-          <li><a href="#Upper_Cathedral_Ward">Upper Cathedral Ward</a> <span id="playthrough_nav_totals_16"></span></li>
-          <li><a href="#Hunters_Nightmare">Hunter's Nightmare</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_17"></span></li>
-          <li><a href="#Research_Hall">Research Hall</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_18"></span></li>
-          <li><a href="#Fishing_Hamlet">Fishing Hamlet</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_19"></span></li>
-          <li><a href="#Hunters_Dream_Late_Blood_Moon">Hunter's Dream (Late Blood Moon)</a> <span id="playthrough_nav_totals_20"></span></li>
+          <li><a href="#Healing_Church_Workshop">Healing Church Workshop</a> <span id="playthrough_nav_totals_4"></span></li>
+          <li><a href="#Cathedral_Ward">Cathedral Ward</a> <span id="playthrough_nav_totals_5"></span></li>
+          <li><a href="#Yahargul_Unseen_Village_Evening">Yahar'gul, Unseen Village (Evening)</a> <span id="playthrough_nav_totals_6"></span></li>
+          <li><a href="#Hemwick_Charnel_Lane">Hemwick Charnel Lane</a> <span id="playthrough_nav_totals_7"></span></li>
+          <li><a href="#Forbidden_Woods">Forbidden Woods</a> <span id="playthrough_nav_totals_8"></span></li>
+          <li><a href="#Iosefkas_Clinic">Iosefka's Clinic</a> <span id="playthrough_nav_totals_9"></span></li>
+          <li><a href="#Byrgenwerth">Byrgenwerth</a> <span id="playthrough_nav_totals_10"></span></li>
+          <li><a href="#Lecture_Building_1F">Lecture Building 1F</a> <span id="playthrough_nav_totals_11"></span></li>
+          <li><a href="#Nightmare_Frontier">Nightmare Frontier</a> <span id="playthrough_nav_totals_12"></span></li>
+          <li><a href="#Yahargul_Unseen_Village_Blood_Moon">Yahar'gul, Unseen Village (Blood Moon)</a> <span id="playthrough_nav_totals_13"></span></li>
+          <li><a href="#Lecture_Building_2F">Lecture Building 2F</a> <span id="playthrough_nav_totals_14"></span></li>
+          <li><a href="#Nightmare_of_Mensis">Nightmare of Mensis</a> <span id="playthrough_nav_totals_15"></span></li>
+          <li><a href="#Forsaken_Cainhurst_Castle">Forsaken Cainhurst Castle</a> <span id="playthrough_nav_totals_16"></span></li>
+          <li><a href="#Upper_Cathedral_Ward">Upper Cathedral Ward</a> <span id="playthrough_nav_totals_17"></span></li>
+          <li><a href="#Hunters_Nightmare">Hunter's Nightmare</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_18"></span></li>
+          <li><a href="#Research_Hall">Research Hall</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_19"></span></li>
+          <li><a href="#Fishing_Hamlet">Fishing Hamlet</a> (The Old Hunters DLC) <span id="playthrough_nav_totals_20"></span></li>
+          <li><a href="#Hunters_Dream_Late_Blood_Moon">Hunter's Dream (Late Blood Moon)</a> <span id="playthrough_nav_totals_21"></span></li>
         </ul>
 
         <div class="form-group">
@@ -103,37 +239,24 @@
 
         <div id="playthrough_list">
 
-          <h3 id="Cemetery_of_Ash"><a href="#Cemetery_of_Ash_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://darksouls3.wiki.fextralife.com/Cemetery+of+Ash">Cemetery of Ash</a> <span id="playthrough_totals_17"></span></h3>
-          <ul id="Cemetery_of_Ash_col" class="collapse in">
-            <li data-id="playthrough_17_1" class="f_misc">From the start head right at the first turn and pick up the <a href="http://darksouls3.wiki.fextralife.com/Soul+of+a+Deserted+Corpse">Soul of a Deserted Corpse</a></li>
-            <li data-id="playthrough_17_2" class="f_estus h_ng+">Loot the corpse on the fountain to obtain the <a href="http://darksouls3.wiki.fextralife.com/Ashen+Estus+Flask">Ashen Estus Flask</a></li>
-            <li data-id="playthrough_17_3" class="f_misc f_tit">Turn right after the fountain and head down the path through a flooded passage. Kill the <a href="http://darksouls3.wiki.fextralife.com/Ravenous+Crystal+Lizard">Ravenous Crystal Lizard</a> to get a <a href="http://darksouls3.wiki.fextralife.com/Titanite+Scale">Titanite Scale</a> and then pick up the <a href="http://darksouls3.wiki.fextralife.com/Soul+of+an+Unknown+Traveler">Soul of an Unknown Traveler</a> from the corpse in the area</li>
-            <li data-id="playthrough_17_16" class="f_ring s_ng+">The <a href="https://darksouls3.wiki.fextralife.com/Speckled+Stoneplate+Ring">Speckled Stoneplate Ring+1</a> is also in this area</li>
-            <li data-id="playthrough_17_4" class="f_gest">Head back to the fountain and take the path straight ahead. Climb the cliff and rest at the Cemetery of Ash bonfire to receive the Rest gesture</li>
-            <li data-id="playthrough_17_5" class="f_tit">From the bonfire head down the left path and jump from the cliff over to the corpse on the tomb to pick up a <a href="http://darksouls3.wiki.fextralife.com/Titanite+Shard">Titanite Shard</a></li>
-            <li data-id="playthrough_17_6" class="f_misc">Take the side ridge down from the large cliff face on the right to pick up <a href="http://darksouls3.wiki.fextralife.com/Firebomb">Firebomb&nbsp;x5</a> from a nearby corpse</li>
-            <li data-id="playthrough_17_7" class="f_boss f_misc">Back on the main path head through the archway and take the sword embedded in the statue. Kill <a href="http://darksouls3.wiki.fextralife.com/Iudex+Gundyr">Iudex Gundyr</a> to receive the <a href="http://darksouls3.wiki.fextralife.com/Coiled+Sword">Coiled Sword</a></li>
-            <li data-id="playthrough_17_8" class="f_none">Congratulate yourself on beating the first boss of Dark Souls 3 and rest at the <a href="http://darksouls3.wiki.fextralife.com/Iudex+Gundyr">Iudex Gundyr</a> bonfire</li>
-            <li data-id="playthrough_17_9" class="f_weap">Continue through the large door and pick up the <a href="http://darksouls3.wiki.fextralife.com/Broken+Straight+Sword">Broken Straight Sword</a> from the corpse leaning on the tombstone</li>
-            <li data-id="playthrough_17_17" class="f_ring s_ng++">The <a href="https://darksouls3.wiki.fextralife.com/Wolf+Ring">Wolf Ring+2</a> is behind the door you just passed</li>
-            <li data-id="playthrough_17_10" class="f_misc">Head over to the large cliff edge and pick up the <a href="http://darksouls3.wiki.fextralife.com/Homeward+Bone">Homeward Bone</a> at the edge of the ridge</li>
-            <li data-id="playthrough_17_11" class="f_weap">Take the left path up the cliff and turn left just before <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> and grab the <a href="http://darksouls3.wiki.fextralife.com/East-West+Shield">East-West Shield</a> from the corpse on the tree</li>
-            <li data-id="playthrough_17_12" class="f_arm f_weap f_miss">Kill <a href="http://darksouls3.wiki.fextralife.com/Sword+Master">Sword Master Saber</a> to get <a href="http://darksouls3.wiki.fextralife.com/Uchigatana">Uchigatana</a><span class="p"> + </span><a href="http://darksouls3.wiki.fextralife.com/Master's+Set">Master's Set</a> and to unlock his summon sign</li>
-            <li data-id="playthrough_17_13" class="f_misc">Head back and up the path to the left to pick up an <a href="http://darksouls3.wiki.fextralife.com/Ember">Ember</a> from a corpse above the entrance above <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a></li>
-            <li data-id="playthrough_17_14" class="f_misc">Continue across to the other side picking up a <a href="http://darksouls3.wiki.fextralife.com/Homeward+Bone">Homeward Bone</a> from a corpse behind a tomb and another <a href="http://darksouls3.wiki.fextralife.com/Ember">Ember</a> from the lower ridge </li>
-            <li data-id="playthrough_17_15" class="f_none">Go back to the main path and enter <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a></li>
+          <h3 id="Hunters_Dream_Afternoon"><a href="#Hunters_Dream_Afternoon_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://bloodborne.wiki.fextralife.com/Hunter's+Dream">Hunter's Dream (Afternoon)</a> </h3>
+          <ul id="Hunters_Dream_Afternoon" class="collapse in">
+            <li data-id="playthrough_1_1" class="f_none">Go through the door and head down the stairs. You'll soon come across a <a href="https://bloodborne.wiki.fextralife.com/Wolf+Beast">Scourge Beast</a> feasting on a corpse. If it kills you, you'll be transported to the Hunter's Dream.</li>
+            <li data-id="playthrough_1_2" class="f_weap">The first time you visit the Hunter's Dream there are <a href="https://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> on the stairway, offering you a choice of starting weapons: the <a href="https://bloodborne.wiki.fextralife.com/Saw+Cleaver">Saw Cleaver</a>, the <a href="https://bloodborne.wiki.fextralife.com/Hunter+Axe">Hunter Axe</a> or the <a href="https://bloodborne.wiki.fextralife.com/Threaded+Cane">Threaded Cane</a>.</li>
+            <li data-id="playthrough_1_3" class="f_weap">Collect the <a href="https://bloodborne.wiki.fextralife.com/Hunter+Pistol">Hunter Pistol</a> or the <https://bloodborne.wiki.fextralife.com/Hunter+Blunderbuss">Hunter Blunderbuss</a> from another <a href="https://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> on the stairs.</li>
+            <li data-id="playthrough_1_4" class="f_misc">Continue up the steps a bit more to receive the <a href="https://bloodborne.wiki.fextralife.com/notebook">Notebook</a> from the remaining <a href="https://bloodborne.wiki.fextralife.com/Messengers">Messengers</a>.</li>
           </ul>
 
-          <h3 id="Firelink_Shrine"><a href="#Firelink_Shrine_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> <span id="playthrough_totals_1"></span></h3>
-          <ul id="Firelink_Shrine_col" class="collapse in">
-            <li data-id="playthrough_1_1" class="f_none">Talk to <a href="http://darksouls3.wiki.fextralife.com/Fire+Keeper">Fire Keeper</a></li>
-            <li data-id="playthrough_1_2" class="f_none">Talk to <a href="http://darksouls3.wiki.fextralife.com/Shrine+Handmaid">Shrine Handmaid</a></li>
-            <li data-id="playthrough_1_3" class="f_gest f_miss">Talk to <a href="http://darksouls3.wiki.fextralife.com/Hawkwood">Hawkwood</a> to receive the Collapse gesture</li>
-            <li data-id="playthrough_1_4" class="f_gest">Talk to <a href="http://darksouls3.wiki.fextralife.com/Blacksmith+Andre">Blacksmith Andre</a> to receive the Hurrah! gesture</li>
-            <li data-id="playthrough_1_5" class="f_misc">Go out the top of <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> and pick up the <a href="http://darksouls3.wiki.fextralife.com/Soul+of+a+Deserted+Corpse">Soul of a Deserted Corpse</a> from the corpse next to the small decrepit tower</li>
-            <li data-id="playthrough_1_6" class="f_none">When you have the <a href="http://darksouls3.wiki.fextralife.com/Tower+Key">Tower Key</a>, unlock the small decrepit tower and head up to the bridge leading to the Bell Tower</li>
-            <li data-id="playthrough_1_7" class="f_none">Roll off the bridge onto the <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> roof and kick down the ladder shortcut</li>
-            <li data-id="playthrough_1_8" class="f_tit">Just behind the roof kill the <a href="http://darksouls3.wiki.fextralife.com/Crystal+Lizard">Crystal Lizard</a> to get a <a href="http://darksouls3.wiki.fextralife.com/Twinkling+Titanite">Twinkling Titanite</a> </li>
+          <h3 id="Central_Yharnam"><a href="#Central_Yharnam_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm"></a><a href="https://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a> </h3>
+          <ul id="Central_Yharnam_col" class="collapse in">
+            <li data-id="playthrough_2_1" class="f_misc">Talk to <a href="http://darksouls3.wiki.fextralife.com/Fire+Keeper">Fire Keeper</a></li>
+            <li data-id="playthrough_2_2" class="f_none">Talk to <a href="http://darksouls3.wiki.fextralife.com/Shrine+Handmaid">Shrine Handmaid</a></li>
+            <li data-id="playthrough_2_3" class="f_gest f_miss">Talk to <a href="http://darksouls3.wiki.fextralife.com/Hawkwood">Hawkwood</a> to receive the Collapse gesture</li>
+            <li data-id="playthrough_2_4" class="f_gest">Talk to <a href="http://darksouls3.wiki.fextralife.com/Blacksmith+Andre">Blacksmith Andre</a> to receive the Hurrah! gesture</li>
+            <li data-id="playthrough_2_5" class="f_misc">Go out the top of <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> and pick up the <a href="http://darksouls3.wiki.fextralife.com/Soul+of+a+Deserted+Corpse">Soul of a Deserted Corpse</a> from the corpse next to the small decrepit tower</li>
+            <li data-id="playthrough_2_6" class="f_none">When you have the <a href="http://darksouls3.wiki.fextralife.com/Tower+Key">Tower Key</a>, unlock the small decrepit tower and head up to the bridge leading to the Bell Tower</li>
+            <li data-id="playthrough_2_7" class="f_none">Roll off the bridge onto the <a href="http://darksouls3.wiki.fextralife.com/Firelink+Shrine">Firelink Shrine</a> roof and kick down the ladder shortcut</li>
+            <li data-id="playthrough_2_8" class="f_tit">Just behind the roof kill the <a href="http://darksouls3.wiki.fextralife.com/Crystal+Lizard">Crystal Lizard</a> to get a <a href="http://darksouls3.wiki.fextralife.com/Twinkling+Titanite">Twinkling Titanite</a> </li>
             <li data-id="playthrough_1_9" class="f_misc">Pick up <a href="http://darksouls3.wiki.fextralife.com/Homeward+Bone">Homeward Bone&nbsp;x3</a> from the lower part of the roof</li>
             <li data-id="playthrough_1_10" class="f_estus">Inside the roof pick up the <a href="http://darksouls3.wiki.fextralife.com/Estus+Shard">Estus Shard</a> from up in the rafters</li>
             <li data-id="playthrough_1_11" class="f_arm f_gest">Trade a <a href="http://darksouls3.wiki.fextralife.com/Homeward+Bone">Homeward Bone</a> with <a href="http://darksouls3.wiki.fextralife.com/Pickle+Pee,+Pump-a-Rum+Crow">Pickle-Pee, Pump-a-Rum</a> crow to receive the Call Over gesture and the <a href="http://darksouls3.wiki.fextralife.com/Iron+Bracelets">Iron Bracelets</a>. For the other trade options see the <a href="#" onclick="$('.nav.navbar-nav li a[href=\x22#tabMisc\x22]').click();">Misc</a> page</li>
